@@ -12,8 +12,8 @@ app.use(express.json()); // Parse JSON request bodies
 
 app.use('/api', apiRouter); // Use your API router
 
-// mongoose.connect('mongodb://0.0.0.0:27017', {
-  mongoose.connect('mongodb+srv://parasusawant6919:prasad69@cluster0.be9yyho.mongodb.net/Employee?retryWrites=true&w=majority', {
+ mongoose.connect('mongodb://0.0.0.0:27017/idealgas', {
+  // mongoose.connect('mongodb+srv://parasusawant6919:prasad69@cluster0.be9yyho.mongodb.net/Employee?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

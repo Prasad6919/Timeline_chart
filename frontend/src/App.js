@@ -1,6 +1,6 @@
 
 import './App.css';
-import Show from './Show';
+import Show from './Components/Show';
 
 function App() {
   return (

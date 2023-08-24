@@ -13,7 +13,7 @@ const dataSchema = new mongoose.Schema({
   }
 });
 
-const DataModel = mongoose.model('charts', dataSchema);
+const DataModel = mongoose.model('charts', dataSchema);// charts database also in atlas
 
 
 module.exports = DataModel;

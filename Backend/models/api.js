@@ -6,7 +6,7 @@ const DataModel = require('../models/mongoose'); // Path might vary based on you
 // GET route to fetch data
 router.get('/data', async (req, res) => {
   try {
-    const data = await DataModel.find();
+    const data = await DataModel.find({"data.io.di1":{"$exists" : true}});
     res.json(data);
     console.log('Retrieved data:', data);
   } catch (error) {
